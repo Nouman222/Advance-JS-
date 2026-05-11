@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #110e1e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 30px;
+    width: 450px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Stats Dashboard */
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+}
+
+.stat-item span {
+    font-weight: bold;
+    color: #8e2de2;
+}
+
+/* Input Styles */
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 12px;
+    color: white;
+    outline: none;
+}
+
+input:focus {
+    border-color: #8e2de2;
+}
+
+#addTodoButton {
+    background: #8e2de2;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* List Items */
+ul {
+    list-style: none;
+}
+
+li {
+    background: rgba(255, 255, 255, 0.03);
+    margin-bottom: 10px;
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+li span {
+    flex: 1;
+}
+
+/* Strike-through logic */
+li.completed span {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.btn-done {
+    background: #2ed573;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background: #ff4757;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+li:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.filter-btn.active {
+    background: #8e2de2;
+    border-color: #8e2de2;
+    box-shadow: 0 0 10px rgba(142, 45, 226, 0.5);
+}
+
+.filter-btn:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.1);
+}

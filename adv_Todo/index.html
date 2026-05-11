@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>My Tasks</h1>
+    <div class="stats">
+        <div class="stat-item">Total: <span id="totalCount">0</span></div>
+        <div class="stat-item">Done: <span id="doneCount">0</span></div>
+        <div class="stat-item">Left: <span id="remainingCount">0</span></div>
+    </div>
+    
+    <!-- New Filter Section -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+    </div>
+
+    <div class="input-group">
+        <input type="text" id="todoInput" placeholder="What needs to be done?">
+        <button id="addTodoButton">Add</button>
+    </div>
+    <ul id="todoList"></ul>
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

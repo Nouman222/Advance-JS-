@@ -3,9 +3,8 @@
 //     console.log("Welcome");
 // } catch{
 //     console.log("Error is occur");
-    
-// }
 
+// }
 
 // try {
 //     console.log("hello");
@@ -13,7 +12,7 @@
 //     console.log("Welcome");
 // } catch{
 //     console.log("Error is occur");
-    
+
 // }
 
 // try {
@@ -46,7 +45,6 @@
 //     }
 // }, 1000);
 
-
 // we have 7 type of error in JavaScript
 // 1. SyntaxError: This error occurs when there is a syntax error in the code. For example, if you forget to close a parenthesis or a curly brace, you will get a SyntaxError.
 // 2. ReferenceError: This error occurs when you try to access a variable that is not defined. For example, if you try to access a variable that has not been declared, you will get a ReferenceError.
@@ -56,3 +54,14 @@
 // 6. URIError: This error occurs when there is an error in the encodeURI() or decodeURI() functions. For example, if you try to decode a URI that contains invalid characters, you will get a URIError.
 // 7. InternalError: This error occurs when there is an internal error in the JavaScript engine. For example, if you try to create an array with a length that is too large, you will get an InternalError.
 
+
+// function divide(a, b) {
+//     try {
+//         if (b === 0) {
+//             throw new Error("Denominator cannot be zero");
+//         }
+//         return a / b;
+//     } catch (error) {
+//         console.log(error.message);
+//     }
+// }
